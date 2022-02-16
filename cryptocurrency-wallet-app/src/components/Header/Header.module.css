@@ -1,0 +1,43 @@
+*{
+    font-size: 18px;
+}
+.header {
+    display: flex;
+    margin: 25px auto;
+    height: 50px;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.logo__image {
+    width: 50px;
+}
+
+.header__currency {
+    display: flex;
+    flex-direction: row;
+}
+
+.currency {
+    display: flex;
+    margin: 0 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__wallet {
+    display: flex;
+}
+
+.wallet__image {
+    width: 50px;
+}
+
+.wallet__balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
