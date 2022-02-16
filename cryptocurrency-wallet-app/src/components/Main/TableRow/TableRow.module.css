@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: orangered;
 }
 
 .row__buy {
@@ -50,7 +51,6 @@
     border-radius: 12px;
     color: #fff;
     display: inline-block;
-    padding: 12px 32px;
     text-align: center;
     transition: background-color .23s ease-out;
 }
@@ -70,4 +70,33 @@
 .table__row:hover {
     cursor: pointer;
     background: radial-gradient(50% 4232% at 50% 50%,#f4f5fb 0,rgba(244,245,251,.9) 60.94%,rgba(244,245,251,0) 100%);
+}
+
+@media (max-width: 800px) {
+    .table__row {
+        width: 400px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 400px) {
+    .row__price {
+        display: none;
+    }
+    .row__change24h {
+        display: none;
+    }
+
+    .table__row {
+        width: 100%;
+    }
+
+    .row__wrapper {
+        justify-content: space-evenly;
+    }
+
+    .buy__button {
+        width: 80px;
+        height: 40px;
+    }
 }

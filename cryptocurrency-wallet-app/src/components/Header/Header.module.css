@@ -62,3 +62,32 @@
 .header__wallet:hover {
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    .header__currency {
+        display: none;
+    }
+
+    .header__wrapper {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__wrapper {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .header__logo {
+        margin-right: 0px;
+    }
+
+    .header__wallet {
+        margin-left: 0px;
+    }
+
+    .wallet__balance {
+        display: none;
+    }
+}

@@ -12,7 +12,6 @@ const Main = () => {
 
     return <main className={s.main}>
         <div className={s.main__table}>
-            <div className="table__head"></div>
             {arrayTableRow}
         </div>
     </main>
