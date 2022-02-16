@@ -1,14 +1,26 @@
 *{
     font-size: 18px;
 }
+
 .header {
+    width: 100%;
+    background: #4285f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header__wrapper {
     display: flex;
     margin: 25px auto;
     height: 50px;
+    background: #4285f5;
 }
 
 .header__logo {
     display: flex;
+    margin-right: 75px;
 }
 
 .logo__image {
@@ -29,6 +41,7 @@
 
 .header__wallet {
     display: flex;
+    margin-left: 75px;
 }
 
 .wallet__image {
@@ -40,4 +53,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 15px;
+}
+
+.header__logo:hover {
+    cursor: pointer;
+}
+
+.header__wallet:hover {
+    cursor: pointer;
 }

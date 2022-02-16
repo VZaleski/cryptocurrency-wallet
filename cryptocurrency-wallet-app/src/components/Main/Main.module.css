@@ -1,0 +1,11 @@
+.main {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.main__table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
