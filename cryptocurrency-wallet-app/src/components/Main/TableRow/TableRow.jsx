@@ -3,8 +3,7 @@ import s from './TableRow.module.css';
 import ModalShoppingWindow from "../ModalShoppingWindow/ModalShoppingWindow";
 
 const TableRow = (props) => {
-    console.log(props)
-    const handleAction = () => {
+    const handleAction = (e) => {
         props.changeValueTableRow(!props.valueTableRow);
     }
 
@@ -22,9 +21,9 @@ const TableRow = (props) => {
             </div>
             <div className={s.row__buy}>
                 <button onClick={handleAction} className={s.buy__button}>buy</button>
-                {props.valueTableRow ? <ModalShoppingWindow /> : null}
             </div>
         </div>
+        {props.valueTableRow ? <ModalShoppingWindow /> : null}
     </div>
 }
 

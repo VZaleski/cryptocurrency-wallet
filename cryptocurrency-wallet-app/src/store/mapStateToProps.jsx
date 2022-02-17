@@ -1,5 +1,3 @@
-import valueTableRow from "./reducers/reducerTableRow";
-
 function mapStateToProps(component) {
 	switch (component) {
 		case "TableRow": {
