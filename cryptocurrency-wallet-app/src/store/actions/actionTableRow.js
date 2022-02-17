@@ -1,0 +1,3 @@
+const ACTION_TABLE_ROW = "ACTION_TABLE_ROW";
+
+export default ACTION_TABLE_ROW;

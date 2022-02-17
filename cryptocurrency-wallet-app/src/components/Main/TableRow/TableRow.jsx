@@ -1,7 +1,13 @@
 import React from 'react';
 import s from './TableRow.module.css';
+import ModalShoppingWindow from "../ModalShoppingWindow/ModalShoppingWindow";
 
-const TableRow = () => {
+const TableRow = (props) => {
+    console.log(props)
+    const handleAction = () => {
+        props.changeValueTableRow(!props.valueTableRow);
+    }
+
     return <div className={s.table__row}>
         <div className={s.row__wrapper}>
             <div className={s.row__name}>
@@ -15,7 +21,8 @@ const TableRow = () => {
                 -1.10%
             </div>
             <div className={s.row__buy}>
-                <button className={s.buy__button}>buy</button>
+                <button onClick={handleAction} className={s.buy__button}>buy</button>
+                {props.valueTableRow ? <ModalShoppingWindow /> : null}
             </div>
         </div>
     </div>
